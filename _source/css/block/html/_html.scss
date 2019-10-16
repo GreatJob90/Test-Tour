@@ -1,0 +1,61 @@
+html {
+    font-family: $font_main;
+    font-size: $font_main_size;
+    color: $font_color_main;
+    background-color: $bg_color_main;
+    height: 100%;
+
+    @media screen and (max-width: $desktop_width_sm) {
+        font-size: 15px;
+    }
+
+    @media screen and (max-width: $table_width_lg) {
+        font-size: 14px;
+    }
+
+    @media screen and (max-width: $table_width) {
+        font-size: 13px;
+    }
+
+    @media screen and (max-width: $phone_width) {
+        font-size: 12px;
+    }
+
+    @media screen and (max-width: $phone_width_sm) {
+        font-size: 11px;
+    }
+}
+
+.page {
+    width: 100%;
+    overflow: hidden;
+}
+
+.wrap {
+    margin: 0 auto;
+    max-width: $desktop_width;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 7rem;
+    font-weight: $font_medium;
+}
+
+h2 {
+    font-size: 3.5rem;
+    font-weight: $font_normal;
+}
+
+h3 {
+    font-size: 1.6rem;
+    font-weight: $font_light;
+}
+
+.hidden {
+    display: none;
+}

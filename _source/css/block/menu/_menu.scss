@@ -1,0 +1,63 @@
+.menu-underline {
+    transition: 500ms;
+    display: block;
+    background-color: $button_color_bg;
+    width: 0px;
+    height: 4px;
+    transform: translate(-190px 0);
+}
+
+.menu__item {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 2.5rem;
+    line-height: 3.7rem;
+    color: $font_color_alt;
+
+    &:hover .menu-underline {
+        width: 29rem;
+    }
+}
+
+@media screen and (max-width: $table_width) {
+    .menu-underline {
+        display: none;
+    }
+}
+
+@media screen and (max-width: $phone_width) {
+    .menu {
+        display: flex;
+        position: absolute;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        width: 75%;
+        text-align: end;
+        transition: 400ms;
+        transform: translate(-100% 0);
+
+        ul {
+            width: 100%;
+        }
+    }
+
+    .menu-underline {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        height: 2px;
+        transform: translate(0 0);
+    }
+
+    .menu__item {
+        color: $font_color_main;
+        background-color: transparentize($bg_color_main, 0.2);
+        padding-right: 5px;
+
+        &:hover .menu-underline {
+            width: 100%;
+        }
+    }
+}

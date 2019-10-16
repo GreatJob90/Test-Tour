@@ -1,0 +1,36 @@
+.form-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 270px;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+    width: 65%;
+    height: 220px;
+    background-color: transparentize($bg_color_main, .2);
+
+    p {
+        padding: 10px 10px 5px 10px;
+        font-size: 1.4rem;
+        font-weight: $font_light;
+    }
+}
+
+@media screen and (max-width: $table_width_lg) {
+    .form-wrap {
+        padding-top: 70px;
+    }
+
+    .form {
+        width: 100%;
+    }
+}

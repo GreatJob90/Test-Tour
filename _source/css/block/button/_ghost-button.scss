@@ -1,0 +1,44 @@
+.order-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5px;
+    background-color: $button_color_bg;
+    font-size: 2.2rem;
+    letter-spacing: 0.2rem;
+    color: $font_color_alt;
+    width: 520px;
+    height: 60px;
+
+    &:hover {
+        background-color: $button_color_hover;
+        color: $font_color_main;
+    }
+
+    &:active {
+        background-color: $button_color_hover;
+        color: $font_color_main;
+    }
+
+    &:focus {
+        background-color: $button_color_hover;
+        color: $font_color_main;
+    }
+
+    &:visited {
+        background-color: $button_color_bg;
+    }
+}
+
+@media screen and (max-width: $table_width) {
+    .order-btn {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: $phone_width_sm) {
+    .order-btn {
+        padding: 0 10px 0 10px;
+        font-size: 2rem;
+    }
+}
