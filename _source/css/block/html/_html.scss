@@ -6,23 +6,23 @@ html {
     height: 100%;
 
     @media screen and (max-width: $desktop_width_sm) {
-        font-size: 15px;
+        font-size: 9px;
     }
 
     @media screen and (max-width: $table_width_lg) {
-        font-size: 14px;
+        font-size: 8px;
     }
 
     @media screen and (max-width: $table_width) {
-        font-size: 13px;
+        font-size: 7px;
     }
 
     @media screen and (max-width: $phone_width) {
-        font-size: 12px;
+        font-size: 6px;
     }
 
     @media screen and (max-width: $phone_width_sm) {
-        font-size: 11px;
+        font-size: 5px;
     }
 }
 
@@ -34,26 +34,26 @@ html {
 .wrap {
     margin: 0 auto;
     max-width: $desktop_width;
+    overflow: hidden;
 }
 
 h1, h2, h3 {
-    text-align: center;
     text-transform: uppercase;
 }
 
 h1 {
-    font-size: 7rem;
-    font-weight: $font_medium;
+    font-size: 7.2rem;
+    font-weight: 800;
+    color: $font_color_alt;
+    padding-bottom: 33px;
 }
 
 h2 {
     font-size: 3.5rem;
-    font-weight: $font_normal;
 }
 
 h3 {
     font-size: 1.6rem;
-    font-weight: $font_light;
 }
 
 .hidden {

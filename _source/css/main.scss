@@ -7,15 +7,20 @@
 //html
 @import "block/html/_html";
 
-//head
-@import "block/head/_head";
-
-//menu
-@import "block/menu/_menu";
-
 //button
 @import "block/button/_button";
 @import "block/button/_ghost-button";
+@import "block/button/_main-button";
+
+//header
+@import "block/header/_header";
+@import "block/header/_head-info";
+
+//slider
+@import "block/slider/_slider";
+
+//menu
+@import "block/menu/_menu";
 
 //about
 @import "block/about/_about";

@@ -1,4 +1,7 @@
 .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: 400ms;
     cursor: pointer;
     user-select: none;

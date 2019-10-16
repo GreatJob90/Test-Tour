@@ -1,61 +1,20 @@
 import $ from 'jquery';
 
-$(document).ready(function () {
-    /* let modalBack = document.getElementById('js-modal-form-bg'),
-        modalForm = document.getElementById('js-modal-form'),
-        getOffer = document.getElementById('js-get-offer'),
-        modalClose = document.getElementById('js-modal-close');
-
-    getOffer.onclick = () => {
-        modalBack.className = 'modal-form-bg modal-open';
-    }
-
-    modalClose.onclick = () => {
-        modalBack.className = 'modal-form-bg modal-close';
-    }
-
-    modalBack.onclick = () => {
-        modalBack.className = 'modal-form-bg modal-close';
-    }
-
-    modalForm.onclick = (event) => {
-        event = event || window.event;
-        if (event.stopPropagation) {
-            event.stopPropagation();
-        } else {
-            event.cancelBuble = true;
-        }
-    } */
+/* $(document).ready(function () {
 
     $("#menu").on("click", "a", function (event) {
-   
-        //отменяем стандартную обработку нажатия по ссылке
         event.preventDefault();
-
-        //забираем идентификатор бока с атрибута href
         var id = $(this).attr('href'),
-
-        //узнаем высоту от начала страницы до блока на который ссылается якорь
         top = $(id).offset().top;
-
-        //анимируем переход на расстояние - top за 1500 мс
         $('body,html').animate({
             scrollTop: top
         }, 800);
     });
 
     $("#next").on("click", function (event) {
-
-        //отменяем стандартную обработку нажатия по ссылке
         event.preventDefault();
-
-        //забираем идентификатор бока с атрибута href
         var id = $(this).attr('href'),
-
-            //узнаем высоту от начала страницы до блока на который ссылается якорь
             top = $(id).offset().top;
-
-        //анимируем переход на расстояние - top за 1500 мс
         $('body,html').animate({
             scrollTop: top
         }, 800);
@@ -108,11 +67,11 @@ $(document).ready(function () {
 
     $('#gallery6').click(function () {
         window.open("gallery6.html", "_blank");
-    });
+    }); */
 
 //FEEDBACK FORM
 
-    let inputName = document.getElementById('name'),
+/*     let inputName = document.getElementById('name'),
         inputPhone = document.getElementById('phone'),
         sendBtn = document.getElementById('sendButton'),
         modalWindow = document.getElementById('modalMsg');
@@ -207,6 +166,6 @@ $(document).ready(function () {
                 console.log(answer.text);
             }, 'json');
     }
-});
+}); */
 
     

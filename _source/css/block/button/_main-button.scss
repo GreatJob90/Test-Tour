@@ -1,27 +1,24 @@
-.ghost-button {
+.main-button {
     padding-bottom: 2px;
     font-size: 2rem;
     font-weight: bold;
     line-height: 2.5rem;
-    color: $button_color_alt;
-    border: 1px solid $button_color_alt;
+    background-color: $button_color;
+    color: $font_color_alt;
     border-radius: 3px;
     width: 223px;
-    height: 49px;
+    height: 60px;
 
     &:hover {
         background-color: $button_color_hover;
-        color: $font_color_alt;
     }
 
     &:active {
         background-color: $button_color_hover;
-        color: $font_color_alt;
     }
 
     &:focus {
         background-color: $button_color_hover;
-        color: $font_color_alt;
     }
 
     &:visited {
