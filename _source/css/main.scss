@@ -16,11 +16,15 @@
 @import "block/header/_header";
 @import "block/header/_head-info";
 
+//menu
+@import "block/menu/_menu";
+
 //slider
 @import "block/slider/_slider";
 
-//menu
-@import "block/menu/_menu";
+//feature
+@import "block/feature/_feature";
+@import "block/feature/_feature-block";
 
 //about
 @import "block/about/_about";

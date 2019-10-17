@@ -14,6 +14,16 @@
 
     a {
         padding: 12px 5px;
+        background-image: url(/_assets/img/style/menu_underline.png);
+        background-repeat: no-repeat;
+        background-size: 0 4px;
+        background-position: 50% bottom;
+        transition: 300ms;
+
+        &:hover {
+            color: $button_color_hover;
+            background-size: 93% 4px;
+        }
     }
 
     &:last-child {
@@ -23,9 +33,5 @@
 
     &:first-child {
         padding-right: 3px;
-    }
-
-    &:hover {
-        
     }
 }

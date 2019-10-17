@@ -37,14 +37,11 @@ html {
     overflow: hidden;
 }
 
-h1, h2, h3 {
-    text-transform: uppercase;
-}
-
 h1 {
     font-size: 7.2rem;
     font-weight: 800;
     color: $font_color_alt;
+    text-transform: uppercase;
     padding-bottom: 33px;
 }
 
@@ -53,7 +50,9 @@ h2 {
 }
 
 h3 {
-    font-size: 1.6rem;
+    font-size: 3.6rem;
+    font-weight: bold;
+    text-transform: lowercase;
 }
 
 .hidden {

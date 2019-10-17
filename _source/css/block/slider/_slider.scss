@@ -2,9 +2,34 @@
     position: relative;
     display: flex;
     overflow: hidden;
+    height: 807px;
     padding-top: 7px;
 }
 
 .slide {
     display: flex;
+}
+
+.slider-button {
+    position: absolute;
+    margin: 0 auto;
+    top: 91.7%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 128px;
+
+    &__dot {
+        display: block;
+        padding: 5px;
+        @include size(16px);
+        border-radius: 50%;
+        background-color: $font_color_alt;
+        cursor: pointer;
+
+        &_active {
+            background-color: $button_color;
+        }
+    }
 }
