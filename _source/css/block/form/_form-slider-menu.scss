@@ -19,13 +19,14 @@
 
     &__underline {
         position: absolute;
-        top: 81px;
+        top: 79px;
         left: 0;
         width: 283px;
-        height: 3px;
+        height: 7px;
+        border-radius: 3px;
         background-image: url(/_assets/img/style/menu_underline.png);
         background-repeat: no-repeat;
-        background-size: 283px 3px;
-        background-position: 50% bottom;
+        background-size: 283px 7px;
+        background-position: 50% 50%;
     }
 }

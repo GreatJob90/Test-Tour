@@ -1,7 +1,29 @@
-.footer-wrap {
+.footer {
     display: flex;
-    flex-grow: 1;
     justify-content: space-between;
-    align-items: flex-end;
-    padding: 0 20px 15px 20px;
+    height: 130px;
+    background-color: $bg_color_alt;
+
+    .menu {
+        padding-top: 22px;
+    }
+
+    .menu__item {
+
+        a {
+            color: $font_color_alt;
+
+            &:hover {
+                color: $button_color_hover;
+            }
+        }
+        
+        &:first-child {
+            padding-left: 68px;
+        }
+
+        &:last-child {
+            padding-left: 44px;
+        }
+    }
 }
