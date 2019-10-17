@@ -26,28 +26,28 @@
                         <p class="modal-form__head">Заполните форму</p>
                         <form action="sendmail.php">
                             <div class="form-slide__row modal-row">
-                                <label for="#modal-name">
+                                <label for="modal-name">
                                     Имя<br>
                                     <input type="text" id="modal-name" name="modal-name" class="input form-input"
                                         tabindex="1">
                                 </label>
-                                <label for="#phone">
+                                <label for="modal-phone">
                                     Телефон<br>
                                     <input type="text" id="modal-phone" name="modal-phone" placeholder="+7 ( ) - -"
                                         class="input form-input form-input__phone" tabindex="2">
                                 </label>
                             </div>
                             <div class="form-slide__row modal-row">
-                                <label for="#modal-email">
+                                <label for="modal-email">
                                     E-mail<br>
                                     <input type="email" id="modal-email" name="modal-email" class="input form-input"
                                         tabindex="3">
                                 </label>
                             </div>
                             <div class="form-slide__row modal-row">
-                                <label for="#modal-email">
+                                <label for="modal-textarea">
                                     Задать вопрос<br>
-                                    <textarea class="modal-textarea" tabindex="4"></textarea>
+                                    <textarea class="modal-textarea" id="modal-textarea" tabindex="4"></textarea>
                                 </label>
                             </div>
                             <p class="modal-policy">Отправляя любые формы запросов, Вы соглашаетесь с условиями
@@ -154,7 +154,7 @@
                     <ul class="form-slider-menu">
                         <li class="form-slider-menu__item form-slider-menu__item_active" id="personalDataButton">личные данные</li>
                         <li class="form-slider-menu__item" id="rulesButton">правила участия</li>
-                        <div class="form-slider-menu__underline" id="formSliderMenuUnderline"></div>
+                        <li class="form-slider-menu__underline" id="formSliderMenuUnderline"></li>
                     </ul>
                     <form action="sendmail.php" class="form-slide fade" id="personalData">
                         <p class="form-slide__head">Заполните форму</p>
@@ -167,7 +167,7 @@
                                     <p class="photo-upload__p">Загрузите фото</p>
                                     <div class="button ghost-button photo-upload__button">Выберите файл</div>
                                 </div>
-                                <label for="#gender" class="form-input__gender">
+                                <label for="gender" class="form-input__gender">
                                     Пол<br>
                                     <select id="gender" name="gender" class="input form-input form-input__select">
                                         <option value="none">не выбран</option>
@@ -177,21 +177,21 @@
                                 </label>
                             </div>
                             <div class="form-slide__row">
-                                <label for="#name">
+                                <label for="name">
                                     Имя<br>
                                     <input type="text" id="name" name="name" class="input form-input" tabindex="1">
                                 </label>
-                                <label for="#phone">
+                                <label for="phone">
                                     Телефон<br>
                                     <input type="text" id="phone" name="phone" placeholder="+7 ( ) - -" class="input form-input form-input__phone" tabindex="3">
                                 </label>
                             </div>
                             <div class="form-slide__row">
-                                <label for="#surname">
+                                <label for="surname">
                                     Фамилия<br>
                                     <input type="text" id="surname" name="surname" class="input form-input" tabindex="2">
                                 </label>
-                                <label for="#email">
+                                <label for="email">
                                     E-mail<br>
                                     <input type="email" id="email" name="email" class="input form-input" tabindex="4">
                                 </label>
