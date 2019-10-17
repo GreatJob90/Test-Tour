@@ -1,0 +1,27 @@
+.photo-upload {
+    height: 101px;
+    flex: 1;
+
+    &__photo {
+        float: left;
+        padding-right: 27px;
+
+        &:after {
+            content: '';
+            clear: both;
+        }
+    }
+
+    &__p {
+       font-family: $font_alt;
+       font-size: 2rem;
+       font-weight: bold;
+       padding-top: 4px;
+       padding-bottom: 20px;
+    }
+
+    &__button {
+        height: 50px;
+        width: 212px;
+    }
+}

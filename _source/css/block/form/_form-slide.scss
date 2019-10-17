@@ -1,0 +1,30 @@
+.form-slide {
+    display: flex;
+    flex-direction: column;
+    
+    &__head {
+        font-size: 3.6rem;
+        font-weight: bold;
+        line-height: 4.4rem;
+        text-transform: uppercase;
+        padding-top: 63px;
+        padding-bottom: 42px;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+
+        &:first-child {
+            padding-bottom: 25px;
+        }
+
+        &:last-child {
+            padding-top: 31px;
+        }
+    }
+
+    &__button {
+        margin-top: 55px;
+    }
+}

@@ -1,0 +1,31 @@
+.form-slider-menu {
+    position: relative;
+    display: flex;
+    padding-bottom: 33px;
+    border-bottom: 1px solid $border_color_hover;
+
+    &__item {
+        font-family: $font_alt;
+        font-size: 3.6rem;
+        color: transparentize($font_color_main, .47);
+        padding-right: 124px;
+        cursor: pointer;
+        transition: 300ms;
+
+        &_active {
+            color: transparentize($font_color_main, .0);
+        }
+    }
+
+    &__underline {
+        position: absolute;
+        top: 81px;
+        left: 0;
+        width: 283px;
+        height: 3px;
+        background-image: url(/_assets/img/style/menu_underline.png);
+        background-repeat: no-repeat;
+        background-size: 283px 3px;
+        background-position: 50% bottom;
+    }
+}

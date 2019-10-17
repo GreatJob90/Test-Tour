@@ -99,5 +99,62 @@
         </div>
     </div>
 
+    <div class="page">
+        <div class="wrap">
+            <div class="form-bg">
+                <div class="form-slider-wrap">
+                    <ul class="form-slider-menu">
+                        <li class="form-slider-menu__item form-slider-menu__item_active">личные данные</li>
+                        <li class="form-slider-menu__item">правила участия</li>
+                        <div class="form-slider-menu__underline"></div>
+                    </ul>
+                    <form action="sendmail.php" class="form-slide">
+                        <p class="form-slide__head">Заполните форму</p>
+                        <div class="input-wrap">
+                            <div class="form-slide__row">
+                                <div class="photo-upload">
+                                    <div class="photo-upload__photo">
+                                        <img src="/_assets/img/style/avatar.png" alt="">
+                                    </div>
+                                    <p class="photo-upload__p">Загрузите фото</p>
+                                    <div class="button ghost-button photo-upload__button">Выберите файл</div>
+                                </div>
+                                <label for="#gender" class="form-input__gender">
+                                    Пол<br>
+                                    <select id="gender" name="gender" class="input form-input form-input__select">
+                                        <option value="none">не выбран</option>
+                                        <option value="male">мужской</option>
+                                        <option value="female">женский</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="form-slide__row">
+                                <label for="#name">
+                                    Имя<br>
+                                    <input type="text" id="name" name="name" class="input form-input">
+                                </label>
+                                <label for="#phone">
+                                    Телефон<br>
+                                    <input type="text" id="phone" name="phone" placeholder="+7 ( ) - -" class="input form-input form-input__phone">
+                                </label>
+                            </div>
+                            <div class="form-slide__row">
+                                <label for="#surname">
+                                    Фамилия<br>
+                                    <input type="text" id="surname" name="surname" class="input form-input">
+                                </label>
+                                <label for="#email">
+                                    E-mail<br>
+                                    <input type="email" id="email" name="email" class="input form-input">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="button main-button form-slide__button">Отправить</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

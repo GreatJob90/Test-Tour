@@ -16,8 +16,9 @@ $phone_width_sm:     420px;
 $font_color_main:        #423A39;
 $font_color_second:      #333333;
 $font_color_alt:         #ffffff;
+$font_color_placeholder: #6a748c;
 
-$border_color:           #000000;
+$border_color:           #423A39;
 $border_color_hover:     #ff5b5b;
 
 $button_color:           #eca078;
@@ -26,5 +27,5 @@ $button_color_hover:     #ff5b5b;
 $button_color_shadow:    darken($button_color_alt, 35%);
  
 $bg_color_main:          #ffffff;
-$bg_color_about:          linear-gradient(#ffffff, #91959b);
-$bg_color_info:          #000000;
+/* $bg_color_about:          linear-gradient(#ffffff, #91959b);
+$bg_color_info:          #000000; */

@@ -1,9 +1,58 @@
-.form_input {
-    transition: 300ms;
-    width: 99%;
+.input-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 4px;
+}
+
+.form-slide label {
+    font-family: $font_alt;
+    font-size: 2rem;
+    font-weight: bold;
+    flex: 1;
+}
+
+.input {
+    width: 98%;
+    max-width: 716px;
     height: 50px;
-    font-size: 1.5rem;
-    padding-left: 15px;
-    border-bottom: 2px solid #000;
-    background: none;
+    background-color: $bg_color_main;
+    border-radius: 3px;
+    padding: 10px 5px 5px 25px;
+
+    &::placeholder {
+        font-family: $font_alt;
+        font-size: 2rem;
+        color: $font_color_placeholder;
+    }
+}
+
+.form-input {
+    transition: 300ms;
+    margin-top: 6px;
+
+    &__gender {
+        padding-top: 18px;
+
+        select {
+            color: $font_color_placeholder;
+            appearance: none;
+            &::-ms-expand {
+                display: none;
+            }
+            background-image: url(/_assets/img/style/select-arrow.svg);
+            background-repeat: no-repeat;
+            background-position: 97% center;
+        }
+
+        option {
+            color: $font_color_main;
+        }
+    }
+
+    &__phone {
+        &::placeholder {
+            letter-spacing: .3rem;
+        }
+    }
 }
