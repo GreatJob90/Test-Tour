@@ -23,6 +23,7 @@ $border_color_hover:     #ff5b5b;
 $button_color:           #eca078;
 $button_color_alt:       #ff5b5b;
 $button_color_hover:     #ff5b5b;
+$button_color_shadow:    darken($button_color_alt, 35%);
  
 $bg_color_main:          #ffffff;
 $bg_color_about:          linear-gradient(#ffffff, #91959b);
