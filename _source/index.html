@@ -19,6 +19,49 @@
 <body>
     <div class="page">
         <div class="wrap">
+            <div class="modal-bg" id="modalWindow">
+                <div class="modal-form" id="modalForm">
+                    <div class="modal-form__close" id="modalClose">&#215;</div>
+                    <div class="modal-form__inner">
+                        <p class="modal-form__head">Заполните форму</p>
+                        <form action="sendmail.php">
+                            <div class="form-slide__row modal-row">
+                                <label for="#modal-name">
+                                    Имя<br>
+                                    <input type="text" id="modal-name" name="modal-name" class="input form-input"
+                                        tabindex="1">
+                                </label>
+                                <label for="#phone">
+                                    Телефон<br>
+                                    <input type="text" id="modal-phone" name="modal-phone" placeholder="+7 ( ) - -"
+                                        class="input form-input form-input__phone" tabindex="2">
+                                </label>
+                            </div>
+                            <div class="form-slide__row modal-row">
+                                <label for="#modal-email">
+                                    E-mail<br>
+                                    <input type="email" id="modal-email" name="modal-email" class="input form-input"
+                                        tabindex="3">
+                                </label>
+                            </div>
+                            <div class="form-slide__row modal-row">
+                                <label for="#modal-email">
+                                    Задать вопрос<br>
+                                    <textarea class="modal-textarea" tabindex="4"></textarea>
+                                </label>
+                            </div>
+                            <p class="modal-policy">Отправляя любые формы запросов, Вы соглашаетесь с условиями
+                                <a href="" class="modal-policy__link">«Положения о конфиденциальности»</a></p>
+                            <div class="button main-button modal-button">Отправить</div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+            
+    <div class="page">
+        <div class="wrap">
             <header>
                 <div><img src="/_assets/img/style/logo.svg" alt="" class="logo"></div>
                 <nav>
@@ -36,14 +79,14 @@
                 <div class="head-info">
                     <p class="head-info__p">Начни с нами</p>
                     <h1>Свое приключение</h1>
-                    <div class="button main-button head-info__btn">перейти</div>
+                    <div class="button main-button head-info__btn" id="getTour">перейти</div>
                 </div>
                 <div class="slider-button">
-                    <span class="slider-button__dot slider-button__dot_active"></span>
-                    <span class="slider-button__dot"></span>
-                    <span class="slider-button__dot"></span>
+                    <span class="slider-button__dot slider-button__dot_active" id="headSlideDot01"></span>
+                    <span class="slider-button__dot" id="headSlideDot02"></span>
+                    <span class="slider-button__dot" id="headSlideDot03"></span>
                 </div>
-                <div class="slide">
+                <div class="slide" id="headSlide">
                     <img src="/_assets/img/style/head_slide-01.png" alt="">
                     <img src="/_assets/img/style/head_slide-02.png" alt="">
                     <img src="/_assets/img/style/head_slide-03.png" alt="">
@@ -54,6 +97,7 @@
 
     <div class="page">
         <div class="wrap">
+            <div id="direction"></div>
             <div class="feature-block">
                 <div class="feature">
                     <img src="/_assets/img/style/star.svg" alt="" class="feature__img">
@@ -83,6 +127,7 @@
 
     <div class="page">
         <div class="wrap">
+            <div id="about"></div>
             <div class="about-block">
                 <div class="about-info">
                     <h2>О нас</h2>
@@ -101,14 +146,17 @@
 
     <div class="page">
         <div class="wrap">
+            <div id="review"></div>
+            <div id="news"></div>
+            <div id="contact"></div>
             <div class="form-bg">
                 <div class="form-slider-wrap">
                     <ul class="form-slider-menu">
-                        <li class="form-slider-menu__item form-slider-menu__item_active">личные данные</li>
-                        <li class="form-slider-menu__item">правила участия</li>
-                        <div class="form-slider-menu__underline"></div>
+                        <li class="form-slider-menu__item form-slider-menu__item_active" id="personalDataButton">личные данные</li>
+                        <li class="form-slider-menu__item" id="rulesButton">правила участия</li>
+                        <div class="form-slider-menu__underline" id="formSliderMenuUnderline"></div>
                     </ul>
-                    <!-- <form action="sendmail.php" class="form-slide">
+                    <form action="sendmail.php" class="form-slide fade" id="personalData">
                         <p class="form-slide__head">Заполните форму</p>
                         <div class="input-wrap">
                             <div class="form-slide__row">
@@ -131,27 +179,27 @@
                             <div class="form-slide__row">
                                 <label for="#name">
                                     Имя<br>
-                                    <input type="text" id="name" name="name" class="input form-input">
+                                    <input type="text" id="name" name="name" class="input form-input" tabindex="1">
                                 </label>
                                 <label for="#phone">
                                     Телефон<br>
-                                    <input type="text" id="phone" name="phone" placeholder="+7 ( ) - -" class="input form-input form-input__phone">
+                                    <input type="text" id="phone" name="phone" placeholder="+7 ( ) - -" class="input form-input form-input__phone" tabindex="3">
                                 </label>
                             </div>
                             <div class="form-slide__row">
                                 <label for="#surname">
                                     Фамилия<br>
-                                    <input type="text" id="surname" name="surname" class="input form-input">
+                                    <input type="text" id="surname" name="surname" class="input form-input" tabindex="2">
                                 </label>
                                 <label for="#email">
                                     E-mail<br>
-                                    <input type="email" id="email" name="email" class="input form-input">
+                                    <input type="email" id="email" name="email" class="input form-input" tabindex="4">
                                 </label>
                             </div>
                         </div>
                         <div class="button main-button form-slide__button">Отправить</div>
-                    </form> -->
-                    <div class="rules-slide">
+                    </form>
+                    <div class="rules-slide" id="rules">
                         <p class="rules-slide__head">Будь собой</p>
                         <p class="rules-slide__p">t is a long established fact that a reader will be distracted by the
                             readable content of a page when looking at its layout. The point of using Lorem Ipsum is

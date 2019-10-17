@@ -10,6 +10,7 @@
         color: transparentize($font_color_main, .47);
         padding-right: 124px;
         cursor: pointer;
+        user-select: none;
         transition: 300ms;
 
         &_active {
@@ -28,5 +29,6 @@
         background-repeat: no-repeat;
         background-size: 283px 7px;
         background-position: 50% 50%;
+        transition: 300ms;
     }
 }

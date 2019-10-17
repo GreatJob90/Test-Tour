@@ -1,8 +1,8 @@
 import $ from 'jquery';
 
-/* $(document).ready(function () {
+$(document).ready(function () {
 
-    $("#menu").on("click", "a", function (event) {
+    $(".menu").on("click", "a", function (event) {
         event.preventDefault();
         var id = $(this).attr('href'),
         top = $(id).offset().top;
@@ -11,67 +11,102 @@ import $ from 'jquery';
         }, 800);
     });
 
-    $("#next").on("click", function (event) {
-        event.preventDefault();
-        var id = $(this).attr('href'),
-            top = $(id).offset().top;
-        $('body,html').animate({
-            scrollTop: top
-        }, 800);
-    });
+    let formSlidePersonalData = document.getElementById('personalData'),
+        personalDataButton = document.getElementById('personalDataButton'),
+        formSlideRules = document.getElementById('rules'),
+        formSlideRulesButton = document.getElementById('rulesButton'),
+        sliderUnderline = document.getElementById('formSliderMenuUnderline');
 
+    personalDataButton.onclick = () => {
+        formSlidePersonalData.style.display = 'flex';
+        formSlidePersonalData.className = 'form-slide fade';
+        personalDataButton.className = 'form-slider-menu__item form-slider-menu__item_active';
+        sliderUnderline.style.transform = 'translateX(0)';
+        formSlideRulesButton.className = 'form-slider-menu__item';
+        formSlideRules.style.display = 'none';
+    }
+    
+    formSlideRulesButton.onclick = () => {
+        formSlideRules.style.display = 'flex';
+        formSlideRules.className = 'form-slide fade';
+        formSlideRulesButton.className = 'form-slider-menu__item form-slider-menu__item_active';
+        sliderUnderline.style.transform = 'translateX(410px)';
+        personalDataButton.className = 'form-slider-menu__item';
+        formSlidePersonalData.style.display = 'none';
+    }
 
-    $(function () {
-        $(window).scroll(function () {
-            if ($(this).scrollTop() != 0) {
-                $('#upButton').fadeIn();
+    let modalWindow = document.getElementById('modalWindow'),
+        getTour = document.getElementById('getTour'),
+        modalClose = document.getElementById('modalClose');
+
+    getTour.onclick = () => {
+        modalWindow.style.display = 'block';
+        modalWindow.className = 'modal-bg fade';
+    }
+
+    modalClose.onclick = () => {
+        modalWindow.style.display = 'none';
+        modalWindow.className = 'modal-bg';
+    }
+
+    let moveX = 0;
+    let timer = setTimeout(function topSlideMove() {
+        slide.style.transform = `translateX(${moveX = moveX-1920}px)`;
+        timer = setTimeout(topSlideMove, 3000);
+        if (moveX < -1920) {
+            moveX = 1920;
+        }
+        activeDots()
+    }, 2500);
+    
+    let slideDotFirst = document.getElementById('headSlideDot01'),
+        slideDotSecond = document.getElementById('headSlideDot02'),
+        slideDotThird = document.getElementById('headSlideDot03'),
+        slide = document.getElementById('headSlide');
+
+        slideDotFirst.onclick = () => {
+            slideDotFirst.className = 'slider-button__dot slider-button__dot_active';
+            slideDotSecond.className = 'slider-button__dot',
+            slideDotThird.className = 'slider-button__dot',
+            slide.style.transform = 'translateX(0px)';
+            clearTimeout(timer);
+        }
+
+        slideDotSecond.onclick = () => {
+            slideDotFirst.className = 'slider-button__dot';
+            slideDotSecond.className = 'slider-button__dot slider-button__dot_active',
+            slideDotThird.className = 'slider-button__dot',
+            slide.style.transform = 'translateX(-1920px)';
+            clearTimeout(timer);
+        }
+
+        slideDotThird.onclick = () => {
+            slideDotFirst.className = 'slider-button__dot';
+            slideDotSecond.className = 'slider-button__dot',
+            slideDotThird.className = 'slider-button__dot slider-button__dot_active',
+            slide.style.transform = 'translateX(-3840px)';
+            clearTimeout(timer);
+        }
+
+        function activeDots() {
+            if (moveX == 0) {
+                slideDotFirst.className = 'slider-button__dot slider-button__dot_active';
+                slideDotSecond.className = 'slider-button__dot';
+                slideDotThird.className = 'slider-button__dot';
+            } else if (moveX == -1920) {
+                slideDotFirst.className = 'slider-button__dot';
+                slideDotSecond.className = 'slider-button__dot slider-button__dot_active';
+                slideDotThird.className = 'slider-button__dot';
             } else {
-                $('#upButton').fadeOut();
+                slideDotFirst.className = 'slider-button__dot';
+                slideDotSecond.className = 'slider-button__dot';
+                slideDotThird.className = 'slider-button__dot slider-button__dot_active';
             }
-        });
-
-        $('#upButton').click(function () {
-            $('body,html').animate({
-                scrollTop: 0
-            }, 800);
-        });
-    });
-
-    $('#orderButton').click(function () {
-        window.open("https://vk.com/fotogr_magnitogorsk", "_blank");
-    });
-
-    $('#saleButton').click(function () {
-        window.open("https://vk.com/fotogr_magnitogorsk", "_blank");
-    });
-
-    $('#gallery1').click(function () {
-        window.open("gallery1.html", "_blank");
-    });
-
-    $('#gallery2').click(function () {
-        window.open("gallery2.html", "_blank");
-    });
-
-    $('#gallery3').click(function () {
-        window.open("gallery3.html", "_blank");
-    });
-
-    $('#gallery4').click(function () {
-        window.open("gallery4.html", "_blank");
-    });
-
-    $('#gallery5').click(function () {
-        window.open("gallery5.html", "_blank");
-    });
-
-    $('#gallery6').click(function () {
-        window.open("gallery6.html", "_blank");
-    }); */
+        };
 
 //FEEDBACK FORM
 
-/*     let inputName = document.getElementById('name'),
+    /* let inputName = document.getElementById('name'),
         inputPhone = document.getElementById('phone'),
         sendBtn = document.getElementById('sendButton'),
         modalWindow = document.getElementById('modalMsg');
@@ -165,7 +200,7 @@ import $ from 'jquery';
             function (answer) {
                 console.log(answer.text);
             }, 'json');
-    }
-}); */
+    } */
+});
 
     

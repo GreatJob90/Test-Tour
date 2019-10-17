@@ -8,10 +8,18 @@
 
 .slide {
     display: flex;
+    flex: none;
+    transition: 1000ms;
+    width: 5760px;
+
+    img {
+        object-fit: cover;
+    }
 }
 
 .slider-button {
     position: absolute;
+    z-index: 99;
     margin: 0 auto;
     top: 91.7%;
     left: 0;

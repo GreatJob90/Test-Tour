@@ -6,6 +6,7 @@
 
 //html
 @import "block/html/_html";
+@import "block/html/_animation";
 
 //button
 @import "block/button/_button";
@@ -38,6 +39,8 @@
 @import "block/form/_input";
 @import "block/form/_rules-slide";
 
+//modal-window
+@import "block/modal/_modal-form";
 
 //footer
 @import "block/footer/_footer";

@@ -1,0 +1,113 @@
+.modal-bg {
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    /* pointer-events: none; */
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 5% auto;
+    padding: 10px 10px 44px 18px;
+    background-image: url(/_assets/img/style/modal_bg_image.png);
+    background-repeat: no-repeat;
+    border-radius: 7px;
+    width: 973px;
+    height: 626px;
+
+    &__inner {
+        margin: 0 auto;
+        padding-top: 8px;
+        width: 90%;
+    }
+
+    &__close {
+        align-self: flex-end;
+        padding-right: 10px;
+        width: 25px;
+        height: 25px;
+        font-size: 4rem;
+        line-height: 2.5rem;
+        color: $button_color_alt;
+        text-align: center;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    &__head {
+       font-size: 3.6rem;
+       font-weight: bold;
+       color: $button_color_alt;
+       text-align: center;
+       text-transform: uppercase;
+       padding-bottom: 35px;
+    }
+}
+
+.modal-row {
+    width: 100%;
+    max-width: 850px;
+    justify-content: flex-start;
+
+    &:first-child {
+        padding-bottom: 16px;
+
+        label {
+            width: 100%;
+            max-width: 413px;
+            
+            &:last-child {
+                margin-left: 23px;
+            }
+        }
+    }
+
+    &:nth-child(3) {
+        padding-top: 16px;
+    }
+
+    .input {
+        width: 100%;
+        max-width: 849px;
+    }
+
+    .modal-textarea {
+        width: 100%;
+        max-width: 849px;
+        height: 93px;
+        border-radius: 3px;
+        padding: 10px;
+    }
+
+    label {
+        flex: 1;
+        font-family: $font_alt;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+}
+
+.modal-policy {
+    padding-top: 28px;
+    padding-bottom: 29px;
+    font-family: $font_alt;
+    font-size: 1.6rem;
+
+    a {
+        font-weight: bold;
+        color: $button_color_alt;
+        text-decoration: underline;
+    }
+}
+
+.modal-button {
+    margin: 0 auto;
+}
+
